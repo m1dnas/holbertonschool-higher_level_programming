@@ -62,8 +62,10 @@ class Rectangle:
         """print the rectangle with the character '#'"""
         empty_string = ""
         if self.__width == 0 or self.__height == 0:
-            return (empty_string)
-        for i in range(self.__height):
-            for j in range(self.__width):
-                print("#", end="")
-            print("")
+            return empty_string
+        for i in range(self.__height + 1):
+            for j in range(self.__width + 1):
+                empty_string += '#'
+            if i is not self.__height:
+                empty_string += '\n'
+        return empty_string
