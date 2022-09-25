@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Task 2 of the project 'Python - more classes'"""
+"""Task 3 of the project 'Python - more classes'"""
 
 
 class Rectangle:
     """Class of the rectangle"""
-    def __init__(self, width=0, height=0, perimeter=0):
+    def __init__(self, width=0, height=0):
         """private instances"""
         if type(width) is not int:
             raise TypeError("width must be an integer")
@@ -55,5 +55,15 @@ class Rectangle:
     def perimeter(self):
         """the perimeter of the rectangle"""
         if self.__width == 0 or self.__height == 0:
-            return 0
+            self.__perimeter == 0
         return((2 * self.__width) + (2 * self.__height))
+
+    def __str__(self):
+        """print the rectangle with the character '#'"""
+        empty_string = ""
+        if self.__width == 0 or self.__height == 0:
+            return (empty_string)
+        for i in range(self.__height):
+            for j in range(self.__width):
+                print("#", end="")
+            print("")
