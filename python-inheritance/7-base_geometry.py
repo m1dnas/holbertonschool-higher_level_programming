@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 """task 7"""
 
+
 class BaseGeometry:
     """-"""
     def area(self):
         """raises an exception"""
         raise Exception("area() is not implemented")
+
     def integer_validator(self, name, value):
         """validates value"""
         if type(value) is not int:
