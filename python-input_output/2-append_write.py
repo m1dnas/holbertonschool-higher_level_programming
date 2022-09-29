@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-Task 2 module: Append to a file
+""" Task 2 module: Append to a file
 """
 
 

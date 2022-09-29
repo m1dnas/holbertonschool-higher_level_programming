@@ -1,13 +1,11 @@
 #!/usr/bin/python3
-"""
-Task 3 module: To JSON string
-"""
+"""JSON"""
+
+
 import json
 
 
-def to_json_string(my_obj):
-    """Return: the JSON representation of an object (string)"""
-    if my_obj is None:
-        return
-    else:
-        return json.dumps(my_obj)
+def save_to_json_file(my_obj, filename):
+    """save to json file"""
+    with open(filename, 'w') as f:
+        json.dump(my_obj, f)
