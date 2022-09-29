@@ -24,7 +24,7 @@
 	>>> lst.append(1)
 	>>> lst.print_sorted()
 	[-20, -2, 0, 1, 5]
-	>>> print(list)
+	>>> print(lst)
 	[-20, 5, -2, 0, 1]
 
 ==== n3 ====
