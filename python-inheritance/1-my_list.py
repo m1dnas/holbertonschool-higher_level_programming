@@ -2,7 +2,7 @@
 """Task 1"""
 
 
-def print_sorted(self):
+class MyList(list):
     """inherits from list"""
     def print_sorted(self):
         """create a new list in ascending sort"""
