@@ -12,7 +12,12 @@ if __name__ == "__main__":
     mysql_usr = sys.argv[1]
     mysql_pswd = sys.argv[2]
     mysql_db = sys.argv[3]
-    db = MySQLdb.connect(host="localhost", port=3306, user=mysql_usr, passwd=mysql_pswd, db=mysql_db)
+    db = MySQLdb.connect(
+            host="localhost",
+            port=3306,
+            user=mysql_usr,
+            passwd=mysql_pswd,
+            db=mysql_db)
 
     # getting a cursor
     cur = db.cursor()
