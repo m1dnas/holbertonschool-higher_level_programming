@@ -18,7 +18,7 @@ if __name__ == "__main__":
     cur = db.cursor()
 
     # executing mysql queries
-    query = "SELECT * FROM hbtn_0e_0usa.states ORDER BY id"
+    query = "SELECT * FROM states ORDER BY id"
     cur.execute(query)
 
     # obtain the data from the state table
