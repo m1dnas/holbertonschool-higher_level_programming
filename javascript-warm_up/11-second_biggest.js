@@ -1,7 +1,6 @@
 #!/usr/bin/node
 const argv = require('process').argv;
 
-let first = -1; let second = -1;
 if (argv[2] === undefined || argv.length < 3) {
   console.log(0);
 } else {
