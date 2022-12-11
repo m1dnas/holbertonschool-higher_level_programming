@@ -15,5 +15,4 @@ if (argv[2] === undefined || argv.length < 4) {
     }
   }
   console.log(second);
-  console.log(first);
 }
