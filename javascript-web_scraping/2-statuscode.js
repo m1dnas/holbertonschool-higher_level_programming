@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const path = process.argv[2]; 
+const path = process.argv[2];
 const request = require('request');
 
 request(path, (err, response) => {
