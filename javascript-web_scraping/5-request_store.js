@@ -8,7 +8,7 @@ const fs = require('fs');
 request(url, (err, response, body) => {
   if (err) console.log(err);
   else {
-      fs.writeFile(pathOfFile, body, 'utf8', (err) => {
+    fs.writeFile(pathOfFile, body, 'utf8', (err) => {
       if (err) console.log(err);
     });
   }
