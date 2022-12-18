@@ -6,17 +6,17 @@ const request = require('request');
 request(api_url, (err, response, body) => {
   if (err) console.log(err);
   else {
-    let completeTask = {};
+    const completeTask = {};
     const data = JSON.parse(body);
     data.forEach(task => {
       if (task.completed == true) {
         if (completeTask[task.userId] != undefined) {
           completeTask[task.userId]++;
         } else {
-        completeTask[task.userId] = 1;
+          completeTask[task.userId] = 1;
         }
       }
     });
     console.log(completeTask);
-    }
+  }
 });
