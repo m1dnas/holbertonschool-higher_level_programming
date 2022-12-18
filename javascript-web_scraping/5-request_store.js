@@ -8,8 +8,7 @@ const fs = require('fs');
 request(url, (err, response, body) => {
   if (err) console.log(err);
   else {
-    let data = JSON.parse(body);
-    fs.writeFile(pathOfFile, data, 'utf8', (err) => {
+      fs.writeFile(pathOfFile, body, 'utf8', (err) => {
       if (err) console.log(err);
     });
   }
